@@ -7,8 +7,6 @@ import {
   verifyAdminPassword,
 } from "@/lib/admin-auth";
 
-export const runtime = "nodejs";
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
