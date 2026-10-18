@@ -65,7 +65,7 @@ export async function POST(request: Request) {
     const { error } = await supabase
       .from("divavision_votes")
       .insert({
-        phase: "first_semi_final",
+        phase: "grand_final",
         jury_country: jury_country.trim(),
         points,
       });
@@ -111,7 +111,7 @@ export async function GET() {
     const { data, error } = await supabase
       .from("divavision_votes")
       .select("id, jury_country, points")
-      .eq("phase", "first_semi_final");
+      .eq("phase", "grand_final");
 
     if (error) {
       return NextResponse.json(
