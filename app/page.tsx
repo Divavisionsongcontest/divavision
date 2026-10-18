@@ -219,7 +219,7 @@ export default function Home() {
               decide the Grand Final winner!
             </p>
             <p className="mt-2 text-xs italic text-slate-400">
-              Voting closes: 11.21.2026 17:00 CET
+              Voting closes: 11.19.2026 17:00 CET
             </p>
           </div>
 
